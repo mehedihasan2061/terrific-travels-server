@@ -105,6 +105,7 @@ async function run() {
 
 
     // country data 
+
      app.get("/country", async (req, res) => {
        const cursor = placeCollection.find();
        const result = await cursor.toArray();
@@ -117,6 +118,8 @@ async function run() {
        const result = await placeCollection.insertOne(user);
        res.send(result);
      });
+    
+    
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
