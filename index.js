@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 
 
 
-console.log(process.env.DB_PASS);
+
 
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.daifw6e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
