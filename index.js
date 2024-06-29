@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("terrific Travels");
 });
 
-// phL7d5GGlUIRqZhw;
+
 console.log(process.env.DB_USER);
 console.log(process.env.DB_PASS);
 
