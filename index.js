@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 
-console.log(process.env.DB_USER);
+
 console.log(process.env.DB_PASS);
 
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
